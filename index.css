@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25emç;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+font-size: 1.5;
+font-weight: bold;
+padding: 10px 20px;
+border-radius: 10px;
+border: 2px solid rgba(0,0,0,0.5);
+box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+color: white;
+background-color: rebeccapurple;
+}
+button:hover{
+background-color: rgb(101, 33, 165);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    display: flex;
+    min-height: 60px;
+    background-color: rgb(155, 150, 150);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.50em;
+}
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: 1.35;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px; 
+}
+nav a{
+    font-weight: 100;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    padding-bottom: 25px;
+}
+nav a:hover{
+    color: darkorange;
+}
+    @media(max: 700px){
+        header{
+            flex-direction: column;
+        }
+    nav{
+        padding: 10px 0px;
+    }
+    
+}
